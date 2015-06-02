@@ -20,10 +20,14 @@
     NSTimer *timerInCurrentRunLoop = [NSTimer scheduledTimerWithTimeInterval:timeInterval target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
     
     //NSTimer初始化方法二
-    NSTimer *timer = [NSTimer timerWithTimeInterval:timeInterval target:self selector:@selector(timeAction:) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer timerWithTimeInterval:timeInterval target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
     [timerInCurrentRunLoop invalidate];
+}
+
+- (void)timerAction:(NSTimer *)timer {
+    
 }
 
 #pragma mark - CADisplayLink
