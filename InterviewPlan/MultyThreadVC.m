@@ -45,7 +45,7 @@
     
     UILabel *gettingSizeLabel = [[UILabel alloc] init];
     gettingSizeLabel.font = [UIFont systemFontOfSize:16];
-    NSString *str = @"我啊发生佛发票发票方法地方日他哦皮图片啊打发没看了看开了阿飞的地方的付出相册我宣传宣传宣传的";
+//    NSString *str = @"我啊发生佛发票发票方法地方日他哦皮图片啊打发没看了看开了阿飞的地方的付出相册我宣传宣传宣传的";
     gettingSizeLabel.text = @"我啊发生佛发票发票方法地方日他哦皮图片啊打发没看了看开了阿飞的地方的付出相册我宣传宣传宣传的";
     gettingSizeLabel.numberOfLines = 0;
 //    gettingSizeLabel.lineBreakMode = NSLineBreakByClipping;
@@ -54,11 +54,12 @@
     CGSize expectSize = [gettingSizeLabel sizeThatFits:maximumLabelSize];
     [gettingSizeLabel setFrame:CGRectMake(5, 200, expectSize.width, expectSize.height)];
     
-    CGSize maximumLabelSizes = CGSizeMake(310, CGFLOAT_MAX);
-    CGRect textRect = [str boundingRectWithSize:maximumLabelSize
-                                             options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
-                                          attributes:@{NSFontAttributeName:gettingSizeLabel.font}
-                                             context:nil];
+//    CGSize maximumLabelSizes = CGSizeMake(310, CGFLOAT_MAX);
+    
+//    CGRect textRect = [str boundingRectWithSize:maximumLabelSize
+//                                             options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
+//                                          attributes:@{NSFontAttributeName:gettingSizeLabel.font}
+//                                             context:nil];
     
     gettingSizeLabel.backgroundColor = [UIColor redColor];
     [self.view addSubview:gettingSizeLabel];
@@ -250,7 +251,7 @@
     
     dispatch_queue_t concurrentQueue = dispatch_queue_create("com.concurrentQueue", DISPATCH_QUEUE_CONCURRENT);
     //或者
-    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(concurrentQueue, ^{
         [self loadData];
     });

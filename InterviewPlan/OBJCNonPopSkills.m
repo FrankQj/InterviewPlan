@@ -65,12 +65,12 @@
 
 - (void)struckInit {
     
-    CGRect rect1 = {1, 2, 3, 4}; //{1, 2, 3, 4}
+//    CGRect rect1 = {1, 2, 3, 4}; //{1, 2, 3, 4}
     
-    CGRect rect2 = {.origin.x = 5, .size = {10, 10}}; //{5, 0, 10, 10}
+//    CGRect rect2 = {.origin.x = 5, .size = {10, 10}}; //{5, 0, 10, 10}
     
     
-    CGRect rect3 = {1, 2};//{1, 2, 0, 0}
+//    CGRect rect3 = {1, 2};//{1, 2, 0, 0}
 }
 
 #pragma mark - [C]三元条件表达式的两元使用
@@ -78,8 +78,8 @@
 - (void)ternaryConditionE {
 //    三元条件表达式?:是C中唯一一个三目运算符，用来替代简单的if-else语句，同时也是可以两元使用的：
     
-    NSString *inputString = @"test";
-    NSString *testString = inputString ? : @"default";
+//    NSString *inputString = @"test";
+//    NSString *testString = inputString ? : @"default";
     //等价于
 //    NSString *testString = inputString ? inputString : @"default";
 }
@@ -89,12 +89,12 @@
 
 - (void)cArrayInit {
     
-    const int numbers[] = {
-        [1] = 3,
-        [2] = 2,
-        [3] = 1,
-        [5] = 12306
-    };//{0, 3, 2, 1, 0, 12306}
+//    const int numbers[] = {
+//        [1] = 3,
+//        [2] = 2,
+//        [3] = 1,
+//        [5] = 12306
+//    };//{0, 3, 2, 1, 0, 12306}
     
 //    这个特性可以用来做枚举值和字符串的映射
     
@@ -103,10 +103,10 @@
         XXType2
     };
     
-    const NSString *XXTypeNameMapping[] = {
-        [XXType1] = @"Type1",
-        [XXType2] = @"Type2"
-    };
+//    const NSString *XXTypeNameMapping[] = {
+//        [XXType1] = @"Type1",
+//        [XXType2] = @"Type2"
+//    };
 }
 
 #pragma mark - [objc]可变参数类型的block

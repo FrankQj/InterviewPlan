@@ -35,7 +35,7 @@
     NSURL *url = [NSURL URLWithString:str];
     NSLog(@"url:\n%@",url);
     
-    int sums = sum(3, 4);
+//    int sums = sum(3, 4);
     
     
     
